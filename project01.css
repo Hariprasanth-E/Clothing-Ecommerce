@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    position: sticky;
+    top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color:whitesmoke;
+    box-shadow: 0px 0px 5px 1px;
+}
+
+.logo{
+    padding-left: 30px;
+}
+
+.logo h1{
+    font-weight:900;
+    font-size:70px;
+    
+}
+.logo h1 span{
+    
+    font-style:italic;
+    color:yellow;
+    font-size: 40px;
+}
+
+
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 0 30px;
+}
+
+.menu ul li a{
+    text-transform:capitalize;
+    color:black;
+    transition: all 0.1s ease-in-out;
+}
+
+.menu ul li a:hover{
+     color:rosybrown;
+}
+
+
+.menu-icons i{
+    padding: 0 10px;
+    transition: all 0.s ease;
+}
+.menu-icons i:hover{
+    color: chocolate;
+}
+
+.menu-icons{
+    padding-right: 30px;
+}
+
+
+
+
+.main-text{
+    background-image:url(./banner-3.png);
+    width: 100%;
+    height:100vh;
+    background-position: center;
+    
+    padding: 15% 20%;
+}
+
+.main-text h5{
+    color: brown;
+    font-size: 30px;
+    padding-left: 5%;
+}
+
+.main-text h1{
+    color:orangered;
+    font-size:70px;
+}
+
+.main-text span{
+    color:red;
+}
+
+.main-text p{
+    color:black;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5%;
+}
+
+.product-btn {
+    
+    padding-top: 60px;
+    padding-left: 13%;    
+}
+
+.product-btn a{
+    border: 0.1px solid black;
+    padding: 10px;
+
+    color:black;
+    background-color:white;
+}
+
+
+.product-btn a:hover{
+    color:white;
+    background-color:black;
+    transition:0.5s;
+}
+
+
+.topic{
+    color:yellow;
+    font-size: 30px;
+    padding: 3% 34%;
+    padding-top: 10%;
+}
+.topic span{
+    color:black;
+    font-size: 40px;
+}
+
+.topic b{
+    color: rgb(107, 40, 40);
+    font-size: 35px;
+}
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-left:60px;
+    
+
+}
+
+
+.product{
+
+    border: 2px solid white;
+    height:360px;
+    width:220px;
+    box-shadow: 1px 2px 2px 1px;
+    border-radius: 10px;
+}
+
+img{
+    padding-top:0.2px;
+    border-radius: 10px;
+    width:100%;
+    height:260px;
+}
+
+img:hover{
+    transform: scale(0.9);
+    transition-duration:0.9s;
+}
+
+
+#heart{
+    padding-left:75px;
+    color:black;
+}
+#heart:hover{
+    color: red;
+}
+
+
+.star{
+    color:gold ;
+    padding-top: 10px;
+    padding-left:5px;
+}
+.price{
+    padding-top: 15px;
+    padding-left:5px;
+}
+
+.price p{
+    padding-top: 5px;
+    padding-left: 6px;
+    font-size: 18px;
+}
+
+
+
+
+.footer-part{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+    padding-left: 90px;
+    padding-right:90px ;
+} 
+
+.footer-part i:hover{
+    color: brown;
+    cursor: pointer;
+}
+.footer-part p{
+    color:brown;
+    cursor: pointer;
+}
+
+b{
+    color: black;
+}
+.footer-part p:hover{
+    color:red;
+}
+
+.footer-part p{
+    line-height: 35px;
+}
+.three h3{
+    padding-left: 50px;
+    padding-top: 150px;
+}
+.three i{
+    color: red;
+   padding:15px;
+}
+
+
+.popular-searchs{
+    padding:30px 30px ;
+}
+.popular-searchs h3{
+    padding: 10px 0px;
+}
+
+.popular-searchs p{
+    color: brown;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.contact{
+    padding:40px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact b{
+    color:brown;
+}
+
+
+
+
+
+@media (max-width:600px){
+
+    .logo{
+        display: none;
+    }
+    
+       
+     .menu-icons i{
+        display: none;
+     }
+
+     .main-text{
+        padding-top: 170px;
+     }
+
+     .main-text h1{
+        font-size: 50px;
+     }
+     .product-btn{
+        padding-left:25%;
+     }
+
+
+     .topic{
+        padding:20px;
+        padding-left: 65px;
+        font-size: 20px;
+     }
+
+     .menu{
+        flex-direction:column;
+        border: 2px solid whitesmoke;
+        height: 60px;
+        overflow: hidden;
+        padding: 20px;
+        background-color: #fff;
+    }
+    
+
+    img{
+        height:300px;
+        width:100%;
+    }
+
+    .product{
+        align-items: center;
+        height: 420px;
+        width: 320px;
+    
+    }
+    .star i{
+        width: 13px;
+        height: 5px;
+    }
+    #heart{
+        display: none;
+    }
+    .product p{
+         font-size: 17px;
+    }
+
+    
+
+
+
+     
+    .two{
+        display: none;
+    }
+
+    .three p{
+        display:none;
+    }
+
+    .three h3{
+        padding-top:0px;
+    }
+
+    .three i{
+        padding: 5px 8px;
+    }
+
+
+    .contact{
+         padding:10px 15px;
+     }
+    .contact h3,p{
+        font-size:13px;
+    }
+    
+}
+
